@@ -45,6 +45,7 @@
     function navScroll() {
 
         let currentSection = $("section[id]");
+        // console.log(currentSection,"currentSection");
         currentSection.waypoint(function (direction) {
 
             if(direction == "down"){

@@ -59,6 +59,7 @@
     let uploader = document.getElementById("uploader");
 
     function addToGallery(src){
+      
         let img = new Image();
         img.src = src;
         img.classList = "gallery-img";
@@ -80,6 +81,7 @@
             reader.addEventListener("load",function () {
                 // preview.src = reader.result;
                 addToGallery(reader.result);
+                console.log(reader.result);
             });
             reader.readAsDataURL(photo[i]);
             console.log(photo[i]);
